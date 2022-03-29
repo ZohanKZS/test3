@@ -1,0 +1,1 @@
+print('art-{0}  bach-{1}  wh-{2}  qty-{3} '.format(1,'qwer',3,True))
