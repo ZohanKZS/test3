@@ -2,4 +2,4 @@
 
 print('sdfasf2')
 
-r=6
+r = 6
