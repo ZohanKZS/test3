@@ -1,0 +1,120 @@
+Index: button.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from kivy.uix.screenmanager import Screen\r\n\r\nfrom kivymd.app import MDApp\r\nfrom kivymd.uix.button import MDRectangleFlatButton\r\n\r\n\r\nclass MainApp(MDApp):\r\n    def build(self):\r\n        screen = Screen()\r\n        screen.add_widget(\r\n            MDRectangleFlatButton(\r\n                text=\"Hello, World\",\r\n                pos_hint={\"center_x\": 0.1, \"center_y\": 0.1},\r\n            )\r\n        )\r\n        return screen\r\n\r\n\r\nMainApp().run()
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/button.py b/button.py
+--- a/button.py	(revision 0192f239410c8e5ba2c02dcdee629de3ae3d8e56)
++++ b/button.py	(date 1648539507865)
+@@ -15,5 +15,6 @@
+         )
+         return screen
+ 
++# хай может быть
+ 
+ MainApp().run()
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1648533450350)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1648533450350)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1648533450642)
++++ b/.idea/.gitignore	(date 1648533450642)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1648539326992)
++++ b/.idea/vcs.xml	(date 1648539326992)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/MobApp.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/MobApp.iml b/.idea/MobApp.iml
+new file mode 100644
+--- /dev/null	(date 1648533450317)
++++ b/.idea/MobApp.iml	(date 1648533450317)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/venv" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1648533450326)
++++ b/.idea/modules.xml	(date 1648533450326)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/MobApp.iml" filepath="$PROJECT_DIR$/.idea/MobApp.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1648533450341)
++++ b/.idea/misc.xml	(date 1648533450341)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (MobApp)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
