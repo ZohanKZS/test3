@@ -1,10 +1,11 @@
-from kivy.uix.screenmanager import Screen
+from kivymd.uix.screenmanager import Screen
 
 from kivymd.app import MDApp
 from kivymd.uix.button import MDRectangleFlatButton
 
 
 class MainApp(MDApp):
+    @property
     def build(self):
         screen = Screen()
         screen.add_widget(
@@ -15,5 +16,5 @@ class MainApp(MDApp):
         )
         return screen
 
-
+# может быть 222
 MainApp().run()
