@@ -30,7 +30,7 @@ def getDF():
     done = False
     while done is False:
         status, done = downloader.next_chunk()
-        print ("Download %d%%." % int(status.progress() * 100))
+        #print ("Download %d%%." % int(status.progress() * 100))
 
     xl = pd.ExcelFile(fl)
 
@@ -47,6 +47,15 @@ def getDF():
 
     return df1
 
+def getDFLocal():
+    fl = 'testLoc.xlsx'
+
+    xl = pd.ExcelFile(fl)
+
+    df1 = xl.parse('Sheet1')
+
+    return df1
+
 class but1:
     def __init__(self,d,lng=''):
         delt=0
@@ -59,7 +68,15 @@ class but1:
         self.bt4=d.loc[14+delt][5]
         self.bt5=d.loc[18+delt][5]
 
+def celp(df,x,y):
 
+    return print(df.loc[x-1][y-2])
+
+def cel(df,x,y):
+    if x-1<0 or y-2<0:
+        return ''
+    else:
+        return df.loc[y-2][x-1]
 
 
 

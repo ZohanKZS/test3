@@ -1,6 +1,6 @@
 # all hi test git
 
-print('print2')
+print('home2')
 
 r = 6
 df = 8
