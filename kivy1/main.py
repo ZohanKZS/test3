@@ -18,6 +18,7 @@ from kivy.graphics import Color, Rectangle
 from random import random as r
 from functools import partial
 
+d=2
 
 class StressCanvasApp(App):
 
